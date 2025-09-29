@@ -13,6 +13,11 @@ function App() {
   return (<ThemeProvider>
     <BrowserRouter>
       <Menu />
+      <Routes>
+      <Route path="/" element={<Inicio />} />
+      <Route path="/sobre" element={<Sobre />} />
+      <Route path="/contato" element={<Contato />} />
+      </Routes>
       
       <h1>Exemplo de useState</h1>
       <Contador />
@@ -24,11 +29,7 @@ function App() {
         <ThemeDisplay />
 
 
-      <Routes>
-        <Route path="/" element={<Inicio />} />
-        <Route path="/sobre" element={<Sobre />} />
-        <Route path="/contato" element={<Contato />} />
-      </Routes>
+      
     </BrowserRouter>
   </ThemeProvider>);
 }
